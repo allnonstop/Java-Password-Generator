@@ -1,6 +1,6 @@
 # Java Password Generator
-# Avery Johnson
-# averyjacobjohnson@gmail.com
+  Avery Johnson
+  averyjacobjohnson@gmail.com
 
   This is just a very basic password generator I made over the weekend.
   I'm still very much a beginner at this and am open to feedback on ways
