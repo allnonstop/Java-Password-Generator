@@ -5,23 +5,23 @@ import java.awt.event.*;
 public class PasswordGenerator implements ActionListener {
 
 	final int FRAME_WIDTH = 800, FRAME_HEIGHT = 600,
-			  TEXT_X = 40, TEXT_Y = 50, TEXT_WIDTH = 700, TEXT_HEIGHT = 100,
-			  UPPER_X = 100, UPPER_Y = 200, UPPER_WIDTH = 200, UPPER_HEIGHT = 50,
-			  LOWER_X = 100, LOWER_Y = 275, LOWER_WIDTH = 200, LOWER_HEIGHT = 50,
-			  NUMBERS_X = 100, NUMBERS_Y = 350, NUMBERS_WIDTH = 200, NUMBERS_HEIGHT = 50,
-			  SYMBOLS_X = 100, SYMBOLS_Y = 425, SYMBOLS_WIDTH = 200, SYMBOLS_HEIGHT = 50,
-			  LENGTH_X = 400, LENGTH_Y = 175, LENGTH_WIDTH = 300, LENGTH_HEIGHT = 100,
-			  ADD_X = 400, ADD_Y = 275, ADD_WIDTH = 100, ADD_HEIGHT = 50,
-			  SUB_X = 550, SUB_Y = 275, SUB_WIDTH = 100, SUB_HEIGHT = 50,
-			  GEN_X = 400, GEN_Y = 375, GEN_WIDTH = 250, GEN_HEIGHT = 100;
+		  TEXT_X = 40, TEXT_Y = 50, TEXT_WIDTH = 700, TEXT_HEIGHT = 100,
+		  UPPER_X = 100, UPPER_Y = 200, UPPER_WIDTH = 200, UPPER_HEIGHT = 50,
+		  LOWER_X = 100, LOWER_Y = 275, LOWER_WIDTH = 200, LOWER_HEIGHT = 50,
+		  NUMBERS_X = 100, NUMBERS_Y = 350, NUMBERS_WIDTH = 200, NUMBERS_HEIGHT = 50,
+		  SYMBOLS_X = 100, SYMBOLS_Y = 425, SYMBOLS_WIDTH = 200, SYMBOLS_HEIGHT = 50,
+		  LENGTH_X = 400, LENGTH_Y = 175, LENGTH_WIDTH = 300, LENGTH_HEIGHT = 100,
+		  ADD_X = 400, ADD_Y = 275, ADD_WIDTH = 100, ADD_HEIGHT = 50,
+		  SUB_X = 550, SUB_Y = 275, SUB_WIDTH = 100, SUB_HEIGHT = 50,
+		  GEN_X = 400, GEN_Y = 375, GEN_WIDTH = 250, GEN_HEIGHT = 100;
 
 	final Color BACKGROUND_COLOR = new Color(51, 102, 153),
-				FOREGROUND_COLOR = new Color(102, 153, 153);
+	      FOREGROUND_COLOR = new Color(102, 153, 153);
 
 	final char[] UPPERS = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'},
-				 LOWERS = {'a','b','c','d','e','f','g','h','i','j','K','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'},
-				 NUMS = {'0','1','2','3','4','5','6','7','8','9'},
-				 SYMS = {'{','}','[',']','(',')','/','"','`','~',',','<','>'};
+		     LOWERS = {'a','b','c','d','e','f','g','h','i','j','K','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'},
+	  	     NUMS = {'0','1','2','3','4','5','6','7','8','9'},
+	 	     SYMS = {'{','}','[',']','(',')','/','"','`','~',',','<','>'};
 
 	final Font bigFont = new Font("Monospaced Bold", Font.BOLD, 75);
 	final Font medFont = new Font("Monospaced Bold", Font.BOLD, 50);
@@ -47,7 +47,7 @@ public class PasswordGenerator implements ActionListener {
 		frame.setSize(FRAME_WIDTH, FRAME_HEIGHT);
 		frame.setLocationRelativeTo(null);
 
-		frameIcon = new ImageIcon("C:\\Users\\avery\\Java\\MyPasswordGenerator\\P_ICON.PNG");
+		frameIcon = new ImageIcon("icon/icon.png");
 
 		text = new JTextField();
 		text.setBounds(TEXT_X, TEXT_Y, TEXT_WIDTH, TEXT_HEIGHT);
